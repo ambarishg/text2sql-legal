@@ -11,6 +11,8 @@ import logging
 SYSTEM_PROMPT = """
 You are an intelligent assistant. 
 You are designed to provide helpful answers based on the context provided.
+Always provide the answer in plain text and preferably diffferent topics 
+seperated by paragraphs.
 """
 
 class AzureOpenAIManager(ILLMHelper):
