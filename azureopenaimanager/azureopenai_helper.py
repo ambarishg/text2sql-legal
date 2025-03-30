@@ -8,12 +8,18 @@ from azureopenaimanager.interface_llm_helper import *
 import uuid
 import logging
 
-SYSTEM_PROMPT = """
-You are an intelligent assistant. 
-You are designed to provide helpful answers based on the context provided.
-Always provide the answer in plain text and preferably diffferent topics 
-seperated by paragraphs.
-"""
+header = "If the answer is not found within the context, please mention \
+        that the answer is not found \
+        Do not answer anything which is not in the context.Please return the response in plain text. Convert any markdown to plain text"
+
+# SYSTEM_PROMPT = """
+# You are an intelligent assistant. 
+# You are designed to provide helpful answers based on the context provided.
+# Always provide the answer in plain text and preferably diffferent topics 
+# seperated by paragraphs.
+# """
+
+SYSTEM_PROMPT = header
 
 class AzureOpenAIManager(ILLMHelper):
     

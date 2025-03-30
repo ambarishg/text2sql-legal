@@ -106,7 +106,7 @@ CREATE TABLE OrderDetails (
 );
 """
 
-max_tokens = 1000
+max_tokens = 3000
 temperature = 0.0
 top_p = 0.9
 frequency_penalty = 0
