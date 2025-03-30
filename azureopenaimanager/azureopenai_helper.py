@@ -8,9 +8,12 @@ from azureopenaimanager.interface_llm_helper import *
 import uuid
 import logging
 
-header = "If the answer is not found within the context, please mention \
-        that the answer is not found \
-        Do not answer anything which is not in the context.Please return the response in plain text. Convert any markdown to plain text"
+header = """
+If the answer is not found within the context, 
+please mention that the answer is not found.
+Please return the response in plain text. 
+Convert any markdown to plain text.
+"""
 
 # SYSTEM_PROMPT = """
 # You are an intelligent assistant. 
