@@ -1,1 +1,1 @@
-sudo docker build -t legalresearcher . 
+sudo docker build --no-cache -t legalresearcher .
